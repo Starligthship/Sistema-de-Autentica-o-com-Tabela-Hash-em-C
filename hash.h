@@ -9,7 +9,7 @@
 
 #include <string.h>
 
-/* ── Constantes ─────────────────────────────────── */
+/*  Constantes  */
 
 #define TAM_TABELA   13
 
@@ -17,7 +17,7 @@
 
 #define TAM_SENHA    64
 
-/* ── Nó da lista encadeada ───────────────────────── */
+/*  Nó da lista encadeada  */
 
 typedef struct No {
 
@@ -31,13 +31,13 @@ typedef struct No {
 
 } TabelaHash;
 
-/* ── Protótipos: funções de hash ─────────────────── */
+/*  Protótipos: funções de hash */
 
 unsigned long  valorString  (const char *str);
 
 int            chaveDivisao (unsigned long valor, int tamanho);
 
-/* ── Protótipos: operações da tabela ─────────────── */
+/* Protótipos: operações da tabela  */
 
 TabelaHash    *criaHash     (int tamanho);
 
@@ -53,7 +53,7 @@ void           imprimeHash  (TabelaHash *tabela);
 
 void           login        (TabelaHash *tabela, const char *username, const char *senha);
 
-/* ── Protótipos: menu ────────────────────────────── */
+/* Protótipos de menu */
 
 void           menuPrincipal(TabelaHash *tabela);
 
